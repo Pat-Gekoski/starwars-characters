@@ -5,7 +5,6 @@ import { People } from '@/types/interfaces'
 import { COLORS } from '@/constants/colors'
 
 const Page = () => {
-	console.log('HERE')
 	const { id } = useLocalSearchParams()
 	const [person, setPerson] = useState<People | null>(null)
 	const [loading, setLoading] = useState(false)

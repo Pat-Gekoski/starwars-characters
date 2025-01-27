@@ -4,7 +4,7 @@ import ListEmptyComponent from '@/components/ListEmptyComponent'
 import { COLORS } from '@/constants/colors'
 import PersonItem from '@/components/PersonItem'
 
-interface Person {
+export interface Person {
 	name: string
 	birth_year: string
 	gender: string

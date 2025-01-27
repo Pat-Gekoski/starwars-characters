@@ -1,13 +1,14 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
-import { People } from '@/types/interfaces'
 import { COLORS } from '@/constants/colors'
+import { Person } from '@/app/people'
 
-const PersonItem: React.FC<{ item: People }> = ({ item }) => {
+const PersonItem: React.FC<{ item: Person }> = ({ item }) => {
 	const id = item.url.split('/').filter(Boolean).pop()
 
-	console.log('🚀 ~ PeopleItem ~ id', id)
+	console.log('item', item)
+
 	return (
 		<Link href={`/people/${id}`} asChild>
 			<TouchableOpacity>
