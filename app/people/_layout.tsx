@@ -1,6 +1,7 @@
-import { COLORS } from '@/constants/colors'
-import { Stack } from 'expo-router'
+import { View, Text } from 'react-native'
 import React from 'react'
+import { Stack } from 'expo-router'
+import { COLORS } from '@/constants/colors'
 
 const Layout = () => {
 	return (
@@ -19,8 +20,8 @@ const Layout = () => {
 				},
 			}}
 		>
-			<Stack.Screen name='index' options={{ title: 'All Films' }} />
-			<Stack.Screen name='[id]' options={{ title: 'Film Details' }} />
+			<Stack.Screen name='index' options={{ title: 'All Characters' }} />
+			<Stack.Screen name='[id]' options={{ title: 'Character Details' }} />
 		</Stack>
 	)
 }
