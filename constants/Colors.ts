@@ -5,3 +5,5 @@ export const COLORS = {
 	itemBackground: '#333333',
 	containerBackground: '#222222',
 }
+
+//
